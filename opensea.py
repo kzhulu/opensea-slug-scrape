@@ -46,8 +46,8 @@ def scroll_and_fetch(chrome_driver, height=0, count=0, collection_slug_list=[]):
 
 
 if __name__ == '__main__':
-    driver = webdriver.Chrome('/usr/local/bin/chromedriver')
-    driver.get('https://opensea.io/rankings?sortBy=total_volume')
+    driver = webdriver.Chrome('/usr/local/bin/chromedriver')  # change your chrome driver here
+    driver.get('https://opensea.io/rankings?sortBy=total_volume')  # ranking page 
     scroll_and_fetch(driver)
     input("press enter to quit")
     driver.quit()
